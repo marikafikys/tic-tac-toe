@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+		<head>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, inital-scale=1.0">
+			<title>Tic-tac-toe</title>
+			<link rel="stylesheet" href="css/style.css">
+			<style>
+				body {
+					margin: 0;
+					height: 100vh;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					font: 30px sans-serif;
+				}
+				.board {
+					display: grid;
+					grid-template-columns: repeat(3, 60px);
+					grid-template-rows: repeat(3, 60px);
+					grid-gap: 10px;
+				}
+				.square {
+					box-shadow: 0 0 5px 0 #0006;
+					border-radius: 8px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					cursor: pointer;
+				}
+				.win {
+					background-color: deeppink;
+					color: white;
+				}
+			</style>
+		</head>
+		<body>
+			<div class="board"></div>
+			<script src="js/script.js"></script>
+		</body>
+</html>
